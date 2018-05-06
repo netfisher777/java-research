@@ -7,7 +7,7 @@ public class LambdaControlledSortRunner {
 
     public static void main(String[] args) {
         System.out.println("*******************1*******************");
-        List<Integer> integerList = new ArrayList<Integer>(List.of(5, 33, 33, 3, 23, 73, 12, 4, 7, 33,  17, -2, 0, 32));
+        List<Integer> integerList = new ArrayList<>(List.of(5, 33, 33, 3, 23, 73, 12, 4, 7, 33,  17, -2, 0, 32));
         System.out.println(integerList);
         List<Integer> sortedIntegerList = LambdaControlledSort.sort(integerList, (Integer nextValueCandidate, Integer currentValue) -> nextValueCandidate <= currentValue);
         System.out.println(sortedIntegerList);
